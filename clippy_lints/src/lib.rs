@@ -351,6 +351,7 @@ mod repeat_once;
 mod return_self_not_must_use;
 mod returns;
 mod same_name_method;
+mod seek_from_start_over_rewind;
 mod self_assignment;
 mod self_named_constructors;
 mod semicolon_if_nothing_returned;
@@ -869,6 +870,7 @@ pub fn register_plugins(store: &mut rustc_lint::LintStore, sess: &Session, conf:
         })
     });
     store.register_early_pass(|| Box::new(crate_in_macro_def::CrateInMacroDef));
+    store.register_late_pass(|| Box::new(seek_from_start_over_rewind::SeekFromStartOverRewind));
     // add lints here, do not remove this comment, it's used in `new_lint`
 }
 

@@ -449,6 +449,7 @@ store.register_lints(&[
     returns::LET_AND_RETURN,
     returns::NEEDLESS_RETURN,
     same_name_method::SAME_NAME_METHOD,
+    seek_from_start_over_rewind::SEEK_FROM_START_OVER_REWIND,
     self_assignment::SELF_ASSIGNMENT,
     self_named_constructors::SELF_NAMED_CONSTRUCTORS,
     semicolon_if_nothing_returned::SEMICOLON_IF_NOTHING_RETURNED,

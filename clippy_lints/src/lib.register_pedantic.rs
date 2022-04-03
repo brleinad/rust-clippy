@@ -81,6 +81,7 @@ store.register_group(true, "clippy::pedantic", Some("clippy_pedantic"), vec![
     LintId::of(redundant_else::REDUNDANT_ELSE),
     LintId::of(ref_option_ref::REF_OPTION_REF),
     LintId::of(return_self_not_must_use::RETURN_SELF_NOT_MUST_USE),
+    LintId::of(seek_from_start_over_rewind::SEEK_FROM_START_OVER_REWIND),
     LintId::of(semicolon_if_nothing_returned::SEMICOLON_IF_NOTHING_RETURNED),
     LintId::of(strings::STRING_ADD_ASSIGN),
     LintId::of(trait_bounds::TRAIT_DUPLICATION_IN_BOUNDS),
